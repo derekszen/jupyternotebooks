@@ -1,0 +1,29 @@
+[project]
+name = "jupyternotebooks"
+version = "0.1.0"
+description = "A new Python project."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[all]",
+    "polars[all]",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+    "mypy",
+    "pre-commit",
+]
+
+[tool.ruff]
+line-length = 99
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
