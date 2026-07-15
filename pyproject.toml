@@ -2,10 +2,15 @@
 name = "jupyternotebooks"
 version = "0.1.0"
 description = "A new Python project."
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = [
     "fastapi[all]",
     "polars[all]",
+    "diffusers>=0.27.2",
+    "transformers>=4.38.0",
+    "accelerate>=0.27.2",
+    "safetensors>=0.4.2",
+    "pillow>=10.2.0",
 ]
 
 [tool.uv]
